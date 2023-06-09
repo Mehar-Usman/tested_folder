@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nos-dark-blue {
+            background-color: var(--nos-dark-blue);
+        }
+
+        .nos-bg-green {
+            background-color: var(--nos-green) !important;
+        }
+
+        :root {
+            --nos-blue: #1881c8;
+            --nos-green: #62b536;
+            --nos-gray: #F6F7F9;
+            --nos-mid-gray: #929292;
+            --nos-mid-blue: #EEF1F7;
+            --nos-dark-blue: #032958;
+            --nos-mid-text-gray: #A5A5A5
+        }
+
+        @font-face {
+            font-family: square-font;
+            src: url(../fonts/Square-721.ttf)
+        }
+
+        .nos-bg-blue {
+            background-color: var(--nos-blue)
+        }
+
+        .nos-blue {
+            color: var(--nos-blue)
+        }
+
+        .nos-bg-green {
+            background-color: var(--nos-green) !important
+        }
+
+        .nos-green {
+            color: var(--nos-green)
+        }
+
+        .nos-bg-gray {
+            background-color: var(--nos-gray)
+        }
+
+        .nos-mid-blue {
+            background-color: var(--nos-mid-blue)
+        }
+
+        .nos-gray {
+            color: var(--nos-mid-gray) !important
+        }
+
+        .nos-dark-blue {
+            background-color: var(--nos-dark-blue)
+        }
+
+        .nos-mid-text-gray {
+            color: var(--nos-mid-text-gray)
+        }
+
+        .nos-btn-primary {
+            background-color: var(--nos-blue) !important;
+            border-color: var(--nos-blue) !important
+        }
+
+        .nos-btn-success {
+            background-color: var(--nos-green) !important;
+            border-color: var(--nos-green) !important
+        }
+
+        .nodesol-navbar>a:hover {
+            color: var(--nos-green) !important
+        }
+
+        .nodesol-navbar .active {
+            color: var(--nos-green) !important
+        }
+
+        .square-font {
+            font-family: square-font
+        }
+
+        .soft-pt-7 {
+            padding-top: 7rem
+        }
+
+        .fs-22 {
+            font-size: 22px
+        }
+
+        .blue-bg {
+            background-image: url(../images/blue-bg.png);
+            width: 100%;
+            display: inline-block
+        }
+
+        .collection .col {
+            width: 17% !important;
+            margin-left: 4%;
+            margin-right: 4%;
+            text-align: center
+        }
+
+        .collection .bg-light:hover {
+            background-color: var(--nos-green) !important;
+            border-color: var(--nos-green) !important;
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+            transition: transform .5s;
+            -webkit-transition: transform .5s;
+            -moz-transition: transform .5s;
+            -ms-transition: transform .5s;
+            -o-transition: transform .5s
+        }
+
+        .carousel-indicators>button {
+            width: 15px !important;
+            height: 15px !important;
+            border-radius: 50% !important;
+            -webkit-border-radius: 50% !important;
+            -moz-border-radius: 50% !important;
+            -ms-border-radius: 50% !important;
+            -o-border-radius: 50% !important
+        }
+
+        .stories {
+            bottom: -70px !important
+        }
+
+        .set-left {
+            left: 12% !important
+        }
+
+        footer ul li {
+            background-color: transparent !important;
+            border: none !important
+        }
+
+        footer ul li a {
+            color: var(--nos-gray) !important
+        }
+
+        .list-group-item .text-decoration-none:hover {
+            color: var(--nos-green) !important
+        }
+
+        .set-padding-left {
+            padding-left: 15px !important
+        }
+
+        .container-fluid {
+            padding-right: 0 !important;
+            padding-left: 0 !important
+        }
+
+        .roboto {
+            font-family: noto sans jp, sans-serif
+        }
+
+        @media(max-width:438px) {
+            .soft-pt-7 {
+                font-size: 1rem !important
+            }
+        }
+
+        .blue-bg {
+    background-image: url(../images/blue-bg.png);
+    width: 100%;
+    display: inline-block;
+}
+    </style>
+</head>
+
+<body>
+    <!-- <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nam? Optio temporibus
+                        suscipit veritatis assumenda? Aliquid obcaecati laborum mollitia vitae magni cupiditate odit
+                        blanditiis nobis, aspernatur corporis, pariatur laudantium nesciunt dolorum quam delectus
+                        aliquam deserunt consectetur! Eveniet quos iste vitae? Reiciendis dolorem maiores quaerat quo
+                        dolor, reprehenderit amet similique rem.
+                    </div>
+                    <div class="col-6 bg-danger">
+                        <img class="img-fluid" height="250px" src="banner-right-section.png" class="d-block w-100"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nam? Optio temporibus
+                        suscipit veritatis assumenda? Aliquid obcaecati laborum mollitia vitae magni cupiditate odit
+                        blanditiis nobis, aspernatur corporis, pariatur laudantium nesciunt dolorum quam delectus
+                        aliquam deserunt consectetur! Eveniet quos iste vitae? Reiciendis dolorem maiores quaerat quo
+                        dolor, reprehenderit amet similique rem.
+                    </div>
+                    <div class="col-6 bg-danger">
+                        <img class="img-fluid" height="250px" src="banner-right-section.png" class="d-block w-100"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-6">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, nam? Optio temporibus
+                        suscipit veritatis assumenda? Aliquid obcaecati laborum mollitia vitae magni cupiditate odit
+                        blanditiis nobis, aspernatur corporis, pariatur laudantium nesciunt dolorum quam delectus
+                        aliquam deserunt consectetur! Eveniet quos iste vitae? Reiciendis dolorem maiores quaerat quo
+                        dolor, reprehenderit amet similique rem.
+                    </div>
+                    <div class="col-6 bg-danger">
+                        <img class="img-fluid" height="250px" src="banner-right-section.png" class="d-block w-100"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <figure>
+                            <img src="https://edu.nodesol.com/images/logo-nodesol.svg" class="img-fluid"
+                                alt="nodesol logo" width="150px" height="60px">
+                        </figure>
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <div class="navbar-collapse justify-content-end collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nodesol-navbar">
+                            <a class="nav-link nos-gray" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link nos-gray" href="#about">About</a>
+                            <a class="nav-link nos-gray" href="#technology">Technology</a>
+                            <a class="nav-link nos-gray" href="#story">Successful Stories</a>
+                            <a class="nav-link nos-gray" href="#contact">Contact Us</a>
+                            <a href="">
+                                <button class="btn btn-primary nos-btn-primary"> <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="15" height="15" fill="currentColor" class="bi bi-telephone-fill"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                        </path>
+                                    </svg> +92 322 4714947
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="nos-bg-gray container-fluid bg-light" id="home">
+        <div
+            style="background-image:url('https://edu.nodesol.com/images/left-blue-circle.png');background-repeat:no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2" class="active" aria-current="true"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3" class=""></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-7 pt-5">
+                                        <h4 class="nos-blue pt-7 square-font">
+
+                                            Software Development Training
+                                        </h4>
+                                        <h1 class="fs-1 fw-bolder square-font">
+                                            <b>
+                                                Empowering Youth To
+                                            </b>
+                                        </h1>
+                                        <h1 class="fs-1 fw-bolder square-font">
+                                            <b>
+                                                Build A Brighter
+                                            </b>
+                                        </h1>
+                                        <h1 class="fs-1 fw-bolder square-font">
+                                            <b>
+                                                Tomorrow
+                                            </b>
+                                        </h1>
+                                        <button class="btn btn-primary nos-btn-success my-3"> <svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                                </path>
+                                            </svg> Call Us: +92 322 4714947
+                                        </button>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <figure>
+                                            <img src="banner-right-section.png" class="img-fluid" width="100%"
+                                                alt="banner-right-section">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-7 pt-5">
+                                        <h4 class="nos-blue pt-7 square-font">
+                                            You can be Industry Ready in 9 Months
+                                        </h4>
+                                        <h1 class="fs-1 fw-bolder square-font">
+                                            <b>
+                                                Nodesol’s Full-Stack
+                                            </b>
+                                        </h1>
+                                        <h1 class="fs-1 fw-bolder square-font">
+                                            <b>
+                                                Development Course
+                                            </b>
+                                        </h1>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <figure>
+                                            <img src="banner-right-section.png" class="img-fluid" width="100%"
+                                                alt="banner-right-section">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-7 pt-5">
+                                        <h4 class="nos-blue pt-7 square-font">
+                                            Transition From Any Background to Tech
+                                        </h4>
+                                        <h1 class="fs-1 fw-bolder square-font">
+                                            <b>
+                                                Unlimited Learning,
+                                            </b>
+                                        </h1>
+                                        <h1 class="fs-1 fw-bolder square-font">
+                                            <b>
+                                                Flexible Direction
+                                            </b>
+                                        </h1>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <figure>
+                                            <img src="banner-right-section.png" class="img-fluid" width="100%"
+                                                alt="banner-right-section">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon text-danger" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid" id="about">
+        <div class="container">
+            <div class="row py-3">
+                <div class="col-md-6">
+                    <figure>
+                        <img src="https://edu.nodesol.com/images/about-us-left.jpg" class="img-fluid"
+                            alt="about-us-left">
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <br> <br> <br>
+                    <span class="nos-blue fs-4 ">
+                        ABOUT US
+                    </span>
+                    <h3>
+                        <b>
+                            We are leading discovery and <br> innovation since 2010
+                        </b>
+                    </h3>
+                    <p class="fs-22 nos-gray pt-3 roboto">
+                        Nodesol has embarked on the journey to upskill and re-skill individuals in the realm of software
+                        development. We aim to train individuals as per industrial requirements and equip them with
+                        hands-on development experience on the latest technologies that hold a promising future.
+                        We help you build a strong foundation so you can be ready for a new career. Nodesol Education
+                        provides a personalized learning experience to suit your past experience and future career
+                        goals. We will equip you with the right knowledge and skills needed to tackle the complex job
+                        markets and boost your career throughout your studies. We strongly believe that "what we learn
+                        to do, we learn by doing."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="blue-bg" id="technology" style="background-color: yellowgreen;">
+        <div class="container">
+            <div class="row">
+                <h3 class="text-center text-white pt-5">
+                    What will you learn
+                </h3>
+                <h6 class="text-center nos-gray roboto">
+                    Want to learn software development as a beginner, but not sure <br> where to start? We have
+                    got
+                    you
+                    covered.
+                </h6>
+                <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3 collection py-5">
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="quasar">
+                                <img height="90px" src="https://edu.nodesol.com/images/quasar.svg" alt="quasar">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                QUASAR
+                            </b>
+                        </figcaption>
+                    </div>
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="laravel">
+                                <img height="90px" src="https://edu.nodesol.com/images/laravel.svg" alt="laravel">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                LARAVEL
+                            </b>
+                        </figcaption>
+                    </div>
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="php">
+                                <img height="90px" src="https://edu.nodesol.com/images/php.svg" alt="php">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                PHP
+                            </b>
+                        </figcaption>
+                    </div>
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="vue">
+                                <img height="90px" src="https://edu.nodesol.com/images/vue.svg" alt="vue">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                VUE
+                            </b>
+                        </figcaption>
+                    </div>
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="javascript">
+                                <img height="90px" src="https://edu.nodesol.com/images/mysql.svg" alt="javascript">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                mysql
+                            </b>
+                        </figcaption>
+                    </div>
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="mysql">
+                                <img height="90px" src="https://edu.nodesol.com/images/bootstrap.svg" alt="mysql">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                Bootstrap
+                            </b>
+                        </figcaption>
+                    </div>
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="bootstrap">
+                                <img height="90px" src="https://edu.nodesol.com/images/oop.svg" alt="bootstrap">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                OOP
+                            </b>
+                        </figcaption>
+                    </div>
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="oop">
+                                <img height="90px" src="https://edu.nodesol.com/images/oop.svg" alt="oop">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                OOP
+                            </b>
+                        </figcaption>
+                    </div>
+                    <div class="col-md-2 col-sm-6 offset-md-1 text-center">
+                        <div class="p-3 border bg-light rounded">
+                            <figure data-bs-toggle="modal" data-bs-target="#exampleModal" class="oop">
+                                <img height="90px" src="https://edu.nodesol.com/images/oop.svg" alt="oop">
+                            </figure>
+                        </div>
+                        <figcaption class="text-white py-3">
+                            <b>
+                                OOP
+                            </b>
+                        </figcaption>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid">
+        <div class="container">
+            <h3 class="pt-5 square-font">
+                <b>
+                    Why Learn Here
+                </b>
+            </h3>
+            <p class="fs-6 nos-gray pt-3 roboto">
+                Nodesol Education provides a personalized learning experience to suit your past experience and
+                future
+                career goals. We will equip you with the right knowledge and skills needed to tackle the complex job
+                markets and boost your career throughout your studies.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <figure>
+                        <img class="img-fluid" src="https://edu.nodesol.com/images/why-learn.png" alt="why learn here">
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <div class="row p-1 p-sm-5">
+                        <div class="col-md-12">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row nos-bg-gray">
+                                    <div class="col-md-3">
+                                        <figure class="text-center ">
+                                            <img src="https://edu.nodesol.com/images/doller.svg"
+                                                class="img-fluid rounded-start pt-3" alt="doller" height="80px"
+                                                width="80px">
+                                        </figure>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <h5 class="card-title">On-site learning</h5>
+                                            <p class="card-text roboto"><small class="text-muted">At Nodesol education,
+                                                    we
+                                                    provide on-site training with complete interactions between
+                                                    instructors and students.</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0 nos-bg-gray">
+                                    <div class="col-md-3">
+                                        <figure class="text-center ">
+                                            <img src="https://edu.nodesol.com/images/teacher.svg"
+                                                class="img-fluid rounded-start pt-3" alt="doller" height="80px"
+                                                width="80px">
+                                        </figure>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Learn by doing Practice</h5>
+                                            <p class="card-text roboto"><small class="text-muted">At Nodesol education,
+                                                    we
+                                                </small></p>
+                                            <p class="card-text "><small class="text-muted"><small
+                                                        class="text-muted">You can learn the
+                                                        best
+                                                        programming by practice through skills-based learning.
+
+                                                    </small></small></p><small class="text-muted">
+                                            </small>
+                                        </div><small class="text-muted">
+                                        </small>
+                                    </div><small class="text-muted">
+                                    </small>
+                                </div><small class="text-muted">
+                                </small>
+                            </div><small class="text-muted">
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0 nos-bg-gray">
+                                        <div class="col-md-3">
+                                            <figure class="text-center ">
+                                                <img src="https://edu.nodesol.com/images/word.svg"
+                                                    class="img-fluid rounded-start pt-3" alt="doller" height="80px"
+                                                    width="80px">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Learn at a flexible pace</h5>
+                                                <p class="card-text roboto"><small class="text-muted">
+                                                        We allow students to progress at a consistent pace that is
+                                                        suitable
+                                                        for them in 8 hours of in-person training.
+                                                    </small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0 nos-bg-gray">
+                                        <div class="col-md-3">
+                                            <figure class="text-center ">
+                                                <img src="https://edu.nodesol.com/images/development.svg"
+                                                    class="img-fluid rounded-start pt-3" alt="doller" height="80px"
+                                                    width="80px">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Hands-on development experience</h5>
+                                                <p class="card-text roboto"><small class="text-muted">We aim to train
+                                                        individuals
+                                                        with problem-solving skills and provide them with hands-on
+                                                        development experience. </small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3" style="max-width: 540px;">
+                                    <div class="row g-0 nos-bg-gray">
+                                        <div class="col-md-3">
+                                            <figure class="text-center ">
+                                                <img src="https://edu.nodesol.com/images/support.svg"
+                                                    class="img-fluid rounded-start pt-3" alt="doller" height="80px"
+                                                    width="80px">
+                                            </figure>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="card-body">
+                                                <h5 class="card-title">One-to-one support</h5>
+                                                <p class="card-text roboto"><small class="text-muted">Facilitating the
+                                                        students'
+                                                        one-to-one support that empowers each one of their students to
+                                                        achieve their educational goals. </small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </small>
+                        </div><small class="text-muted">
+                        </small>
+                    </div><small class="text-muted">
+                    </small>
+                </div><small class="text-muted">
+                </small>
+            </div><small class="text-muted">
+            </small>
+        </div>
+    </section>
+
+
+    <section class="" style="background-color: green;">
+        <div class="container">
+            <div class="row p-5">
+                <div class="col-md-8 text-white">
+                    <div class="w-100">
+                        <h4 class="square-font">
+                            <b>
+                                Do You Have Questions ?
+                            </b>
+                        </h4>
+                    </div>
+                    <div class="w-100">
+                        <h6>
+                            We’ll help you to grow your career and growth.
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-3">
+                    <button class="btn btn-primary nos-btn-primary"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                            </path>
+                        </svg> Call Us: +92 322 4714947
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pb-5 container-fluid" id="story">
+        <div class="container">
+            <h3 class="pt-5 square-font text-center">
+                <b>
+                    Stories of Successful Students
+                </b>
+            </h3>
+            <p class="fs-6 nos-gray pt-3 text-center roboto">
+                Nodesol Education aims to create a new community with professionals and experts to promote
+                expertise,
+                mutual respect, support, and recognition of the responsibility of instructors to be seeking ways to
+                improve their practice and contribute to the institute. Both professional community and social
+                support
+                have a positive relationship with student performance.
+            </p>
+            <div id="carouselExampleIndicators2nd" class="carousel slide mt-5" data-bs-ride="true">
+                <div class="carousel-indicators stories">
+                    <button type="button" data-bs-target="#carouselExampleIndicators2nd" data-bs-slide-to="0"
+                        class="nos-bg-green" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2nd" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="nos-bg-green"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators2nd" data-bs-slide-to="2"
+                        aria-label="Slide 3" class="nos-bg-green active" aria-current="true"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item roboto">
+                        <div class="row">
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure>
+                                        <img src="./images/slide.png"
+                                            class="img-fluid card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            I believe in lifelong learning and Nodesol Education is a great place to
+                                            learn
+                                            from experts. I have learned a lot about software and app development. I
+                                            recommend it.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-3 col-6 mt-2">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Abdul Waheed
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Kasur
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure class="">
+                                        <img src="./images/slide2.png"
+                                            class="card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            At my old college, I didn't understand everything about the professor's
+                                            lecture
+                                            because it was too theoretical.
+                                            I learned very quickly from my start-to-end journey at Nodesol
+                                            Education.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-2 col-6">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Qurban Ali
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Lahore
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure class="">
+                                        <img src="./images/slide3.png"
+                                            class="card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            I completed the Full Stack Development Program from Nodesol Education
+                                            and it
+                                            was
+                                            the best choice I could have made. I highly recommend Nodesol.</p>
+                                        <p></p>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-2 col-6">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Awais Javaid
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Lahore
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item roboto">
+                        <div class="row">
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure class="">
+                                        <img src="https://edu.nodesol.com/images/slide2.png"
+                                            class="card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            Had a great learning experience at Nodesol Education with cooperating
+                                            and
+                                            knowledgeable instructors. Their fee structure is affordable and they
+                                            deliver
+                                            quality education.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-2 col-6">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Muhammad Javed
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Chiniot
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure class="">
+                                        <img src="https://edu.nodesol.com/images/slide2.png"
+                                            class="card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            I learned a full-stack development course that was challenging
+                                            for me as well. But with the skilled and experienced teachers, I learned
+                                            quickly
+                                            and thoroughly.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-2 col-6">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Rabbani Safdar
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Toba Tek Singh
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure class="">
+                                        <img src="https://edu.nodesol.com/images/slide2.png"
+                                            class="card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            I am impressed with their practical way of teaching and the flexibility
+                                            of
+                                            the
+                                            program. You should also join them for your bright future. I would
+                                            highly
+                                            recommend this institute.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-2 col-6">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Saeed Ansari
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Gojra
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item roboto active">
+                        <div class="row">
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure class="">
+                                        <img src="https://edu.nodesol.com/images/slide2.png"
+                                            class="card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            Amazing place to learn to code. Incredible price, engaging staff, and
+                                            quality.
+                                            Totally recommend it. For the first time in my life, I really enjoyed
+                                            learning.
+                                        </p>
+                                        <div class="row ">
+                                            <div class="col-md-3 mt-2 col-6">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Shakeel Ahmad
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Lahore
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure class="">
+                                        <img src="https://edu.nodesol.com/images/slide2.png"
+                                            class="card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            I learned web development from Nodesol Education which really helped
+                                            give me
+                                            a
+                                            firm understanding of Web Development and Software Programming.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-2 col-6">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Akhlaq
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Kasur
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 pt-5">
+                                <div class="card position-relative bg-light">
+                                    <figure class="">
+                                        <img src="https://edu.nodesol.com/images/slide2.png"
+                                            class="card-img-top position-absolute top-0 translate-middle p-2 bg-light border rounded-circle set-left"
+                                            alt="..." style="width:70px !important; height:70px !important ;">
+                                    </figure>
+                                    <div class="card-body mt-2">
+                                        <p class="card-text">
+                                            It was very helpful and I understood things so easily. A beginner in
+                                            this
+                                            field
+                                            will surely be benefited. This helped me take up full-stack web
+                                            development.
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-md-3 mt-2 col-6">
+                                                <span class="p-3 rounded-circle nos-bg-green">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                        fill="currentColor" class="bi bi-quote text-white"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="col-md-9 col-6">
+                                                <span>
+                                                    Khawaja Sajid Mehmood
+                                                </span> <br>
+                                                <div style="padding-left: 2 rem;">
+                                                    Multan
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-light mt-5">
+        <div class="container">
+            <h3 class="pt-5 square-font text-center">
+                <b>
+                    Full Stack development Timeline
+                </b>
+            </h3>
+            <p class="fs-6 nos-gray pt-3 text-center">
+                You can be industry ready in 9 months!
+            </p>
+            <figure class="m-0">
+                <img src="https://edu.nodesol.com/images/technology.png" class="img-fluid" width="100%"
+                    alt="technology">
+            </figure>
+        </div>
+    </section>
+
+    <div class="container-fluid">
+        <section class="nos-mid-blue container-fluid">
+            <div class="container">
+                <h3 class="pt-5 square-font text-center square-font">
+                    <b>
+                        New Community with <br> <strong class="nos-blue"> Professionals and Experts </strong>
+                    </b>
+                </h3>
+                <p class="fs-6 nos-gray pt-3 text-center">
+                    Our new community with professionals is characterized by mutual respect and by recognition of the
+                    responsibility of instructors to contribute to the institute. Both professional community and social
+                    support have a positive relationship with student performance.
+                </p>
+                <figure>
+                    <img src="https://edu.nodesol.com/images/community.png" class="img-fluid" width="100%"
+                        alt="community">
+                </figure>
+            </div>
+        </section>
+    </div>
+
+    <div class="container-fluid">
+        <footer class="nos-dark-blue" id="contact">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="p-3">
+                            <figure>
+                                <a href="#">
+                                    <img src="https://edu.nodesol.com/images/logo-nodesol.svg" class="img-fluid" alt="node-sol" height="60px"
+                                        width="150px">
+                                </a>
+                            </figure>
+                            <p class="text-white">
+                                Nodesol has embarked on the journey to upskill and re-skill individuals in the realm of
+                                software
+                                development. We aim to train individuals as per industrial requirements and equip them
+                                with
+                                hands-on development experience on the latest technologies that hold a promising future.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="p-3 text-white">
+                            <h5 class="square-font set-padding-left">
+                                Useful Link
+                            </h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a href="#" class="text-decoration-none"> Home
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-decoration-none"> About N-Education
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-decoration-none"> Technology
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-decoration-none"> Successful Stories
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-decoration-none"> Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="p-3 text-white">
+                            <h5 class="square-font set-padding-left">
+                                Learning Technologies
+                            </h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        Laravel PHP Framework
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        PHP Framework
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        Vuejs Javascript Framework
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        Javasript Programming Language
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        MYSQL (Database Management)
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        Bootstrap (CSS Framework)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="p-3 text-white">
+                            <h5 class="square-font set-padding-left">
+                                Contact Us
+                            </h5>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="fa-solid fa-phone"></i> +92 322 4714947 <br> <span> +92
+                                            300
+                                            0035033</span>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="fa-solid fa-envelope"></i> support@nodesol.com
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a class="text-decoration-none" href="#">
+                                        <i class="fa-solid fa-location-arrow"></i> 440 F Block, Phase 1, Johar Town,
+                                        Lahore
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="" style="background-color: green;">
+            <div class="container">
+                <p class="text-center py-3 m-0">
+                    © Copyright 2022 Nodesol Education, All rights reserved
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

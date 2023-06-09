@@ -1,0 +1,28 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.bg{
+    background-color: crimson;
+
+}
+.navbar{
+    padding: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+@media (max-width:768px) {
+    .ul-bg{
+        background-color: coral;
+    }
+}
+nav .nav-item a:hover{
+    color: yellow;
+    background-color: black;
+}
+nav .nav-item a{
+    color: white;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #curved-div::after {
+            content: '';
+            display: block;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: rotate(226deg);
+            z-index: 1;
+            border-radius: 80px;
+        }
+
+        .abt-block {
+            background-size: 440px auto;
+            z-index: 2;
+            display: flex;
+            position: relative;
+            z-index: 2;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px;
+            text-align: left;
+            height: 100vh;
+        }
+
+        #curved-div::after {
+            content: '';
+            display: block;
+            background: #fff;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0; 
+            transform: rotate(226deg);
+            z-index: 1;
+            border-radius: 80px;
+        }
+
+        #curved-div::before {
+            content: '';
+            display: block;
+            background: #fff;
+            width: 50%;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="snapper-section section-block cust-sect bg-img-1 position-relative">
+        <div class="container-fluid">
+            <div class="row">
+                <div id="curved-div" class="col-xl-6 col-lg-12 col-12">
+                    <div class="abt-block bg-danger"> 
+                        <h4>We are <span>NodeSol</span></h4>
+                        <p class="pt-md-4 mt-3">NodeSol is the newest incarnation of our parent company,
+                            FiberTechOnline, which has been working
+                            with US clients for over a decade providing engineering consulting to small and medium sized
+                            businesses. We are now taking the best of FiberTech to the enterprise level, providing Web
+                            &amp;
+                            App
+                            Development, DevOps, Consulting, Dedicated Resources, Digital Marketing services and more.
+                            With
+                            enterprise projects comes a new level of auditing, security, and enhanced protocol for
+                            protecting
+                            your assets and your remote staff with consideration for confidentiality, compliance and
+                            risk.
+                        </p>
+                        <a class="btn btn-primary mt-5  w-25" href="#contact"> DROP US A LINE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
